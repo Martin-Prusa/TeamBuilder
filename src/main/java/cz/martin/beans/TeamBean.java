@@ -23,7 +23,7 @@ public class TeamBean {
 
     public void generateTeams() {
         String[] playersArr = players.split(",");
-        if(numberOfTeams <= 0 || playersArr.length % numberOfTeams != 0) {
+        if(numberOfTeams < 1 || playersArr.length % numberOfTeams != 0) {
             this.showError = true;
             return;
         }
