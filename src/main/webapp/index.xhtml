@@ -36,7 +36,7 @@
             </div>
             <div class="mb-3">
                 <label for="teams" class="form-label">Number of teams</label>
-                <h:inputText value="#{team.numberOfTeams}" class="form-control" id="teams"/>
+                <h:inputText type="number" value="#{team.numberOfTeams}" class="form-control" id="teams"/>
             </div>
             <div>
                 <h:commandButton action="#{team.generateTeams()}" class="btn btn-primary" value="Generate teams"/>
